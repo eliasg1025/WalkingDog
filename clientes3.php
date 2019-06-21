@@ -117,10 +117,10 @@
 		</div>
 	</form>
 
-	<br>
-	<br>
-	<br>
-	<a type="submit" href="index.php" class="btn btn-primary">Ir a inicio></a>
+	<a href="index.php" class="btn btn-primary btn-lg">Ir a inicio></a>
+
+	<hr>
+	<hr>
 
 
 </body>
