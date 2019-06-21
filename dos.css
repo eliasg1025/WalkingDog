@@ -1,0 +1,15 @@
+.wrapper {
+	min-height: 100vh;
+	position: relative;
+	background: url("../Img/dog7.jpg") no-repeat right center;
+	background-size: cover;}
+
+}
+.inner{
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%);
+	width:  650px
+
+}
