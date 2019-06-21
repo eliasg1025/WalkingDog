@@ -10,7 +10,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <title>TheWalkingDog</title>
     <style>
-     
+
 
 
 body{
@@ -21,10 +21,10 @@ body{
 	background:url(Img/dog6.jpg);
   position: relative;
 	background-repeat: no-repeat right center width:1000px;
-	background-position:380px 280px ; 
+	background-position:380px 280px ;
   background-color: #DCDCDC
   background-size: cover;
-  
+
 
 }
 
@@ -32,49 +32,49 @@ body{
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: #A52A2A;"> 
+    <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: #A52A2A;">
     	 <td><img src="Img/dog4.jpg" style="width: 1000px"></td>
 
   <div class="form-group">
        <div class="form-group">
         <right>
-          <a href="¿Quiénes somos?.html" class="btn btn-primary">¿Quíenes somos?</a> 
+          <a href="¿Quiénes somos?.html" class="btn btn-primary">¿Quíenes somos?</a>
       <a href="Inicio Sesión.html" class="btn btn-primary">Iniciar sesión</a>
          </right>
 </nav>
 
-  
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
 </div>
-    <ul class="navbar-nav mr-auto"> 
-      <li class="nav-item active"> 
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
 
 
       </li>
-    </ul> 
+    </ul>
 </nav>
 <br>
 <div class="container">
   <div class="row">
 <div class="col-md-3 offset-md-4">
 
-  <form action="inicio.html"> 
+  <form action="inicio.html">
     <div class="form-group">
     	 <div class="form-group">
-    	 	<center> 
+    	 	<center>
           <div>
     	 	<h1>REGISTRATE </h1>
         </div>
 
-    	<a href="paseadores1.php" class="btn btn-primary">PASEADOR</a> 
+    	<a href="paseadores1.php" class="btn btn-primary">PASEADOR</a>
       <a href="registro_de_clientes.php" class="btn btn-primary">CLIENTE</a>
-    	 
+
       </center>
 
-     
+
 
 </div>
 </div>
@@ -87,12 +87,12 @@ body{
 
     </style>
 
-   
+
   </body>
 </body>
 
-        
-        
+
+
 
 
  </body>
