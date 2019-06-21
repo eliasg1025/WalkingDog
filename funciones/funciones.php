@@ -5,7 +5,7 @@
 		$servidor = "bcr0vpolusmgl6hocqjt-mysql.services.clever-cloud.com";
 		$basededatos = "bcr0vpolusmgl6hocqjt";
 
-		$conexion = mysqli_connect( $servidor, $usuario, "") or die ("No se ha podido conectar al servidor de BD");
+		$conexion = mysqli_connect( $servidor, $usuario, $contrasena) or die ("No se ha podido conectar al servidor de BD");
 		$db = mysqli_select_db($conexion, $basededatos) or die ( "No se ha encontrado la base de datos" );
 
 		return $conexion;

@@ -79,6 +79,6 @@ body{
     <textarea class="form-control" id="Descripcion1" rows="3"></textarea>
   </div>
 
-  <a href="inicio.html" class="btn btn-primary">Finalizar</a>
+  <a href="index.php" class="btn btn-primary">Finalizar</a>
 
 </html>
