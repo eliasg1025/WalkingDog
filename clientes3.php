@@ -1,5 +1,5 @@
 <?php
-	require_once("./funciones/funciones.php");
+	require_once("funciones/funciones.php");
 	$conexion = abrirConexion();
 ?>
 <html>
@@ -26,10 +26,10 @@
 
 		<div class="form-group">
 			<div class="form-group">
-				<right>
-					<a href="¿Quiénes somos?.html" class="btn btn-primary">¿Quíenes somos?</a>
-					<a href="Inicio Sesión.html" class="btn btn-primary">Iniciar sesión</a>
-				</right>
+				<a href="¿Quiénes somos?.html" class="btn btn-primary">¿Quíenes somos?</a>
+				<a href="Inicio Sesión.html" class="btn btn-primary">Iniciar sesión</a>
+			</div>
+		</div>
 	</nav>
 
 
@@ -38,19 +38,13 @@
 		<span class="navbar-toggler-icon"></span>
 	</button>
 
-	</div>
 	<ul class="navbar-nav mr-auto">
 		<li class="nav-item active">
 		</li>
 	</ul>
-	</nav>
+
 	<br>
 	<form action="clientes3.php">
-		<div class="form-group">
-			<div class="form-group">
-
-			</div>
-		</div>
 		<div class="container-fluid">
 			<form>
 				<div class="form-row">
@@ -60,84 +54,73 @@
 					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 
 				</div>
+			</form>
 
-				<br>
-				<div class="row">
-					<div class="col-md-12">
+			<br>
+			<div class="row">
+				<div class="col-md-12">
 
-						<p align="center"><a href="registro_de_clientes.php">Nuevo registro</a></p>
-						<br>
-						<table class="table table-bordered table-hover" align="center" width="80%">
-							<tr>
-								<th width="50px">#</th>
-								<th>Nombres</th>
-								<th>Apellidos</th>
-								<th>email</th>
-								<th> </th>
-								<th></th>
-							</tr>
-							<?php
- if(isset($_GET['nombre'])) {
-                $consulta = "SELECT * FROM servicio_cliente WHERE nombre = '".$_GET['nombre']."' ";
-                $resultado = queries($conexion, $consulta);
-                $i = 1;
-                while ($columna = mysqli_fetch_array($resultado))
-                {
-                  echo "
-                    <tr>
-                      <td>".$i."</td>
-                      <td>".$columna['nombre']."</td>
-                      <td>".$columna['apellido']."</td>
-                      <td>".$columna['correo']."</td>
-              
-                    </tr>
-                  ";
-                  $i++;
-                }
+					<p align="center"><a href="registro_de_clientes.php">Nuevo registro</a></p>
+					<br>
+					<table class="table table-bordered table-hover" align="center" width="80%">
+						<tr>
+							<th width="50px">#</th>
+							<th>Nombres</th>
+							<th>Apellidos</th>
+							<th>email</th>
+							<th> </th>
+							<th></th>
+						</tr>
+						<?php
+							if(isset($_GET['nombre'])) {
+								$consulta = "SELECT * FROM servicio_cliente WHERE nombre = '".$_GET['nombre']."' ";
+								$resultado = queries($conexion, $consulta);
+								$i = 1;
+								while ($columna = mysqli_fetch_array($resultado))
+								{
+									echo "
+										<tr>
+										<td>".$i."</td>
+										<td>".$columna['nombre']."</td>
+										<td>".$columna['apellido']."</td>
+										<td>".$columna['correo']."</td>
+								
+										</tr>
+									";
+									$i++;
+								}
+								cerrarConexion($conexion);
 
-            cerrarConexion($conexion);
-  }else{
-            $consulta = "SELECT * FROM servicio_cliente";
-            $resultado = queries($conexion, $consulta);
-            $i = 1;
-            while ($columna = mysqli_fetch_array($resultado))
-            {
-              echo "
-                <tr>
-                  <td>".$i."</td>
-                  <td>".$columna['nombre']."</td>
-                  <td>".$columna['apellido']."</td>
-                  <td>".$columna['correo']."</td>
-                  
+							} else {
+								$consulta = "SELECT * FROM servicio_cliente";
+								$resultado = queries($conexion, $consulta);
+								$i = 1;
+								while ($columna = mysqli_fetch_array($resultado))
+								{
+									echo "
+										<tr>
+										<td>".$i."</td>
+										<td>".$columna['nombre']."</td>
+										<td>".$columna['apellido']."</td>
+										<td>".$columna['correo']."</td>
+										
 
-                </tr>
-              ";
-              $i++;
-            }
-
-            cerrarConexion($conexion);
-          }
-?>
-
-						</table>
-					</div>
+										</tr>
+									";
+									$i++;
+								}
+								cerrarConexion($conexion);
+							}
+							?>
+					</table>
 				</div>
+			</div>
 		</div>
 
 		<br>
 		<br>
 		<br>
-		</style>
-		<a type="submit" href="inicio.html" class="btn btn-primary">Ir a inicio></a>
-
-
-
-
-</body>
-</body>
-
-
-
+		<a type="submit" href="index.php" class="btn btn-primary">Ir a inicio></a>
 
 
 </body>
