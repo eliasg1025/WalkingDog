@@ -46,15 +46,14 @@
 	<br>
 	<form action="clientes3.php">
 		<div class="container-fluid">
-			<form>
-				<div class="form-row">
-					<div class="col-3">
-						<input type="text" class="form-control" placeholder="Pon nombre" name="nombre">
-					</div>
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 
+			<div class="form-row">
+				<div class="col-3">
+					<input type="text" class="form-control" placeholder="Pon nombre" name="nombre">
 				</div>
-			</form>
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+			</div>
 
 			<br>
 			<div class="row">
@@ -116,11 +115,12 @@
 				</div>
 			</div>
 		</div>
+	</form>
 
-		<br>
-		<br>
-		<br>
-		<a type="submit" href="index.php" class="btn btn-primary">Ir a inicio></a>
+	<br>
+	<br>
+	<br>
+	<a type="submit" href="index.php" class="btn btn-primary">Ir a inicio></a>
 
 
 </body>
